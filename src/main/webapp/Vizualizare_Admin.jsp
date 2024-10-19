@@ -12,15 +12,8 @@
 <jsp:useBean id="jb" scope="session" class="db.javabean" />
 <jsp:setProperty name="jb" property="*" />
 <body>
-	<%
-    Long idUser = (Long) session.getAttribute("idUser");
-    Boolean esteAdmin = (Boolean) session.getAttribute("esteAdmin");
-%>
 	<h1 align="center">Tabela Instrumente:</h1>
 	<br />
-	<p align="center">
-		<a href="Cos.jsp"><b>Coș</b></a>
-	</p>
 	<table border="1" align="center">
 		<tr>
 			<td><b>Categorie:</b></td>
@@ -28,39 +21,40 @@
 			<td><b>Descriere:</b></td>
 			<td><b>Pret:</b></td>
 			<td></td>
-			<td><b>Adaugare Articol:</b></td>
+			<td><b>Sterge:</b></td>
 		</tr>
 		<%
-			jb.connect();
-			ResultSet rs = jb.vedeTabela("instrumente");
-			while (rs.next()) {
-			%>
+		jb.connect();
+		ResultSet rs = jb.vedeTabela("instrumente");
+		while (rs.next()) {
+		%>
 		<tr>
 			<td><%=rs.getString("categorie")%></td>
 			<td><%=rs.getString("nume")%></td>
 			<td><%=rs.getString("descriere")%></td>
 			<td><%=rs.getString("pret")%></td>
 			<td><img width=300 height=300
-				src=<%=rs.getString("pathImagine") %>></td>
+				src=<%=rs.getString("pathImagine")%>></td>
 			<td>
-				<form action="servletCos" method="post">
-				<input type="hidden" name="itemId" value="<%=rs.getLong("idInstrument")%>">
-				<input type="hidden" name="userId" value="<%=idUser%>">
-					<input type="number" name="value" min="0" value="0">
-					<button type="submit">Adauga in cos</button>
+				<form action="servletStergereInstrument" method="post">
+					<input type="hidden" name="idSterge"
+						value="<%=rs.getLong("idInstrument")%>">
+					<button type="submit">Sterge Produs</button>
 				</form>
 			</td>
 			<%
-				}
-				%>
+			}
+			%>
 		</tr>
 	</table>
 	<br />
-
+		<p align="center">
+			<a href="Adauga_Produs.jsp"><b>Adauga Produs</b></a>
+		</p>
 	<%
-rs.close();
-jb.disconnect();
-%>
+	rs.close();
+	jb.disconnect();
+	%>
 	<br />
 </body>
 </html>

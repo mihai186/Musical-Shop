@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body.login {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f0; /* Light background color */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Clean font */
+}
+
+/* Style the login container */
+.container-login {
+    background-color: #ffffff; /* White background for the form */
+    padding: 40px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+    width: 300px; /* Fixed width for the login box */
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px; /* Space below the title */
+    color: #333; /* Dark color for the title */
+}
+
+/* Form styling */
+.container-login form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+/* Input styling */
+.divUserParola {
+    margin-bottom: 15px; /* Space below each input */
+}
+
+/* Input fields */
+input[type="text"], 
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease; /* Transition effect for focus */
+}
+
+/* Focus effect on input fields */
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    border-color: #3498db; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Button styling */
+button {
+    background-color: #2ecc71; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 12px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect for hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Link styling */
+.container-login a {
+    display: block; /* Block-level for link */
+    margin-top: 15px; /* Space above the link */
+    color: #3498db; /* Blue color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hover effect for the link */
+.container-login a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Error message styling */
+.error-message {
+    margin-top: 20px; /* Space above the message */
+    color: #e74c3c; /* Red color for error message */
+    font-weight: bold; /* Bold text */
+}
