@@ -11,7 +11,7 @@
 </head>
 <jsp:useBean id="jb" scope="session" class="db.javabean" />
 <jsp:setProperty name="jb" property="*" />
-<body>
+<body class="tabelaInstrumente">
 	<%
     Long idUser = (Long) session.getAttribute("idUser");
     Boolean esteAdmin = (Boolean) session.getAttribute("esteAdmin");

@@ -13,7 +13,7 @@
 <jsp:setProperty name="jb" property="*" />
 <body class="login">
     <div class="container-login">
-        <h1>Login</h1> <!-- Added a title for the login form -->
+        <h1>Login</h1> 
         <form method="POST" action="">
             <div class="divUserParola">
                 <label for="username">Username:</label>
@@ -29,7 +29,7 @@
         </form>
         <a href="Cont_Nou.jsp"><b>Cont nou</b></a>
         
-    <% // Check if the form has been submitted and handle login
+    <%
     String message = "";
     if (request.getMethod().equalsIgnoreCase("POST")) {
         String username = request.getParameter("username");
@@ -49,7 +49,7 @@
         }
     }
     %>
-        <p class="error-message"><%= message %></p> <!-- Display the error message with a class -->
+        <p class="error-message"><%= message %></p>
     </div>
 
 </body>

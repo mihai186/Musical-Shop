@@ -11,7 +11,7 @@
 </head>
 <jsp:useBean id="jb" scope="session" class="db.javabean" />
 <jsp:setProperty name="jb" property="*" />
-<body>
+<body class="tabelaInstrumente">
 	<h1 align="center">Tabela Instrumente:</h1>
 	<br />
 	<table border="1" align="center">
