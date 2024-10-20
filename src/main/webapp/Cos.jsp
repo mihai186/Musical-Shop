@@ -6,11 +6,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <title>Coș</title>
 </head>
 <jsp:useBean id="jb" scope="session" class="db.javabean" />
 <jsp:setProperty name="jb" property="*" />
-<body>
+<body class="tabelaInstrumente">
 	<h1 align="center">Coș Instrumente:</h1>
 	<br />
 	<%
@@ -22,6 +23,8 @@
 			<td><b>Nume Instrument:</b></td>
 			<td><b>Pret:</b></td>
 			<td><b>Cantitate:</b></td>
+			<td><b>Imagine:</b></td>
+			<td><b>Sterge:</b></td>
 		</tr>
 		<%
 		jb.connect();
@@ -37,7 +40,7 @@
 			<td><%=rs.getString("cantitate")%></td>
 			<td><img width=200 height=200
 				src=<%=rs.getString("pathImagine")%>></td>
-			<td>
+			<td class="sterge">
 				<form action="servletStergereCos" method="post">
 					<input type="hidden" name="idIntrare"
 						value="<%=rs.getLong("idIntrare")%>">
@@ -49,7 +52,7 @@
 			%>
 		</tr>
 		<tr>
-			<td><b>Pret total:</b><%=total%></td>
+			<td colspan="6" style="text-align: right;"><b>Pret total:</b> <%= total %></td>
 		</tr>
 	</table>
 	<br />

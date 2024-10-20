@@ -14,7 +14,6 @@
 <jsp:useBean id="jb" scope="session" class="db.javabean" />
 <jsp:setProperty name="jb" property="*" />
 <body>
-	<!-- Display the form -->
 	<form method="POST" action="">
 		<div>
 			<label for="username">Username:</label> <input type="text"

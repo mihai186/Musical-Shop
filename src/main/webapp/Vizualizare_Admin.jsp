@@ -33,9 +33,9 @@
 			<td><%=rs.getString("nume")%></td>
 			<td><%=rs.getString("descriere")%></td>
 			<td><%=rs.getString("pret")%></td>
-			<td><img width=300 height=300
+			<td><img
 				src=<%=rs.getString("pathImagine")%>></td>
-			<td>
+			<td class="sterge">
 				<form action="servletStergereInstrument" method="post">
 					<input type="hidden" name="idSterge"
 						value="<%=rs.getLong("idInstrument")%>">

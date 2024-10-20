@@ -1,176 +1,259 @@
 @charset "UTF-8";
 
 body.login {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    font-family: Arial, sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f0f0;
+	margin: 0;
+	font-family: Arial, sans-serif;
 }
 
 .container-login {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+	background-color: #ffffff;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 300px;
 }
 
 h1 {
-    margin-bottom: 20px;
-    color: #333;
+	margin-bottom: 20px;
+	color: #333;
 }
 
 .container-login form {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .divUserParola {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
-input[type="text"], 
+input[type="text"],
 input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus, 
+input[type="text"]:focus,
 input[type="password"]:focus {
-    border-color: #3498db;
-    outline: none;
+	border-color: #3498db;
+	outline: none;
 }
 
 button {
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+	background-color: #2ecc71;
+	color: white;
+	border: none;
+	padding: 12px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #27ae60;
+	background-color: #27ae60;
 }
 
 .container-login a {
-    display: block;
-    margin-top: 15px;
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
+	display: block;
+	margin-top: 15px;
+	color: #3498db;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .container-login a:hover {
-    color: #2980b9;
+	color: #2980b9;
 }
 
 .error-message {
-    margin-top: 20px;
-    color: #e74c3c;
-    font-weight: bold;
+	margin-top: 20px;
+	color: #e74c3c;
+	font-weight: bold;
 }
+
 body.tabelaInstrumente {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	margin: 0;
+	padding: 0;
 }
 
 .tabelaInstrumente h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 20px;
-    font-size: 32px;
+	text-align: center;
+	color: #2c3e50;
+	margin-top: 20px;
+	font-size: 32px;
 }
 
 .tabelaInstrumente p {
-    text-align: center;
+	text-align: center;
 }
 
 .tabelaInstrumente a {
-    color: #3498db;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+	color: #3498db;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .tabelaInstrumente a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .tabelaInstrumente table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 80%;
+	margin: 20px auto;
+	border-collapse: collapse;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.tabelaInstrumente th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+.tabelaInstrumente th,
+td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
 }
 
 .tabelaInstrumente th {
-    background-color: #34495e;
-    color: white;
-    font-weight: bold;
-    text-align: center;
+	background-color: #34495e;
+	color: white;
+	font-weight: bold;
+	text-align: center;
 }
 
 .tabelaInstrumente td {
-    text-align: center;
+	text-align: center;
 }
 
 .tabelaInstrumente td img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
 }
 
 .tabelaInstrumente form {
-    display: inline-block;
+	display: inline-block;
 }
 
 .tabelaInstrumente input[type="number"] {
-    width: 50px;
-    padding: 5px;
-    font-size: 16px;
+	width: 100px;
+	padding: 5px;
+	font-size: 16px;
 }
 
 .tabelaInstrumente button {
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+	background-color: #2ecc71;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 .tabelaInstrumente button:hover {
-    background-color: #27ae60;
+	background-color: #27ae60;
 }
 
 .tabelaInstrumente tr:nth-child(even) {
-    background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
 
 .tabelaInstrumente tr:hover {
-    background-color: #f1c40f;
+	background-color: #f1c40f;
+}
+
+.sterge button {
+	background-color: #ff0202;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.sterge button:hover {
+	background-color: #e60000;
+}
+
+
+body.adaugaProdus {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.adaugaProdus form {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 350px;
+	text-align: left;
+}
+
+.adaugaProdus h1 {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.adaugaProdus form label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+	font-weight: bold;
+}
+
+.adaugaProdus form input[type="text"],
+form input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	transition: border-color 0.3s;
+}
+
+.adaugaProdus form input[type="text"]:focus,
+form input[type="number"]:focus {
+	border-color: #3498db;
+	outline: none;
+}
+
+.adaugaProdus form input[type="submit"] {
+	background-color: #2ecc71;
+	color: white;
+	border: none;
+	padding: 12px;
+	width: 100%;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.adaugaProdus form input[type="submit"]:hover {
+	background-color: #27ae60;
 }

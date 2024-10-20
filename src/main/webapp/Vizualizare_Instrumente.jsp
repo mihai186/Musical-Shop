@@ -27,7 +27,7 @@
 			<td><b>Nume Instrument:</b></td>
 			<td><b>Descriere:</b></td>
 			<td><b>Pret:</b></td>
-			<td></td>
+			<td><b>Imagine:</b></td>
 			<td><b>Adaugare Articol:</b></td>
 		</tr>
 		<%
